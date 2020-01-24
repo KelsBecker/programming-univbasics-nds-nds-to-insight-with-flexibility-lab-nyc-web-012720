@@ -22,6 +22,9 @@ def flatten_a_o_a(aoa)
 end
 
 def movie_with_director_name(director_name, movie_data)
+  # director_name => String
+  # movie_data => Hash
+  
   { 
     :title => movie_data[:title],
     :worldwide_gross => movie_data[:worldwide_gross],
@@ -29,6 +32,8 @@ def movie_with_director_name(director_name, movie_data)
     :studio => movie_data[:studio],
     :director_name => director_name
   }
+  
+  # returns a Hash
 end
 
 
